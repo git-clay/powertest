@@ -53,14 +53,16 @@ var displayPow = document.getElementById('displayPow')
 
 	var likeFunc = function (snapid){
 		var snapbox = document.getElementById(`power${snapid}`).value
-		var powerVal = parseInt(snapbox) + 3
+		var powerVal = parseFloat(snapbox) + .2
+		console.log(powerVal)
+
 		document.getElementById(`power${snapid}`).value = powerVal
 		submitFunc(snapid)
 	}
 
 	var dislikeFunc = function (snapid){
-		var snapbox = document.getElementById(`power${snapid}`).value
-		var powerVal = parseInt(snapbox) -2
+		var snapbox = document.getElementById(`power${snapid}`).value		
+		var powerVal = parseFloat(snapbox) - .3
 		document.getElementById(`power${snapid}`).value = powerVal
 		submitFunc(snapid)		
 	}
