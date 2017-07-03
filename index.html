@@ -15,12 +15,10 @@
 		<label >Distance</label>
 			<input type="text" id="distance1" value="1"><br>
 
-
-
 		<label>power of snap</label>
 		<input type="text" id="power1" value="50"><br>
-		<button id="like1">Like</button>
-		<button id="dislike1">Dislike</button>
+		<button id="like1" onclick="likeFunc(1)">Like</button>
+		<button id="dislike1" onclick="dislike(1)">Dislike</button>
 
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(1);">
 		<div id="result1">0</div>
@@ -31,13 +29,13 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: red 2px solid;">
 		<h3>Snap 2</h3>
 		<label >Distance</label>
-			<input type="text" id="distance2" value="2"><br>
+			<input type="text" id="distance2" value="1"><br>
 
 
 		<label>power of snap</label>
-		<input type="text" id="power2" value="50"><br>
-		<button id="like1">Like</button>
-		<button id="dislike1">Dislike</button>
+		<input type="text" id="power2" value="60"><br>
+		<button id="like1"  onclick="likeFunc(2)">Like</button>
+		<button id="dislike1" onclick="dislike(2)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(2);">
 		<div id="result2">0</div>
 
@@ -47,12 +45,12 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: green 2px solid;">
 		<h3>Snap 3</h3>
 		<label >Distance</label>
-			<input type="text" id="distance3" value="3"><br>
+			<input type="text" id="distance3" value="1"><br>
 
 		<label>power of snap</label>
-		<input type="text" id="power3" value="50"><br>
-		<button id="like3">Like</button>
-		<button id="dislike3">Dislike</button>
+		<input type="text" id="power3" value="70"><br>
+		<button id="like3"  onclick="likeFunc(3)">Like</button>
+		<button id="dislike3" onclick="dislike(3)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(3);">
 		<div id="result3">0</div>
 	</div>
@@ -60,12 +58,12 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: orange 2px solid;">
 		<h3>Snap 4</h3>
 		<label >Distance</label>
-			<input type="text" id="distance4" value="4"><br>
+			<input type="text" id="distance4" value="1"><br>
 
 		<label>power of snap</label>
-		<input type="text" id="power4" value="50"><br>
-		<button id="like4">Like</button>
-		<button id="dislike4">Dislike</button>
+		<input type="text" id="power4" value="80"><br>
+		<button id="like4"  onclick="likeFunc(4)">Like</button>
+		<button id="dislike4" onclick="dislike(4)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(4);">
 		<div id="result4">0</div>
 	</div>
@@ -73,11 +71,11 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: silver 2px solid;">
 		<h3>Snap 5</h3>
 		<label >Distance</label>
-			<input type="text" id="distance5" value="5"><br>
+			<input type="text" id="distance5" value="2"><br>
 		<label>power of snap</label>
 		<input type="text" id="power5" value="50"><br>
-		<button id="like5">Like</button>
-		<button id="dislike5">Dislike</button>
+		<button id="like5"  onclick="likeFunc(5)">Like</button>
+		<button id="dislike5" onclick="dislike(5)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(5);">
 		<div id="result5">0</div>
 	</div>
@@ -85,11 +83,11 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: gold 2px solid;">
 		<h3>Snap 6</h3>
 		<label >Distance</label>
-			<input type="text" id="distance6" value="6"><br>
+			<input type="text" id="distance6" value="2"><br>
 		<label>power of snap</label>
-		<input type="text" id="power6" value="50"><br>
-		<button id="like6">Like</button>
-		<button id="dislike6">Dislike</button>
+		<input type="text" id="power6" value="60"><br>
+		<button id="like6"  onclick="likeFunc(6)">Like</button>
+		<button id="dislike6" onclick="dislike(6)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(6);">
 		<div id="result6">0</div>
 	</div>
@@ -97,11 +95,11 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: brown 2px solid;">
 		<h3>Snap 7</h3>
 		<label >Distance</label>
-			<input type="text" id="distance7" value="7"><br>
+			<input type="text" id="distance7" value="2"><br>
 		<label>power of snap</label>
-		<input type="text" id="power7" value="50"><br>
-		<button id="like7">Like</button>
-		<button id="dislike7">Dislike</button>
+		<input type="text" id="power7" value="70"><br>
+		<button id="like7"  onclick="likeFunc(7)">Like</button>
+		<button id="dislike7" onclick="dislike(7)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(7);">
 		<div id="result7">0</div>
 	</div>
@@ -109,14 +107,30 @@
 	<div style="width: 240px; display: inline-block; position: relative; border: pink 2px solid;">
 		<h3>Snap 8</h3>
 		<label >Distance</label>
-			<input type="text" id="distance8" value="8"><br>
+			<input type="text" id="distance8" value="2"><br>
 		<label>power of snap</label>
-		<input type="text" id="power8" value="50"><br>
-		<button id="like8">Like</button>
-		<button id="dislike8">Dislike</button>
+		<input type="text" id="power8" value="80"><br>
+		<button id="like8"  onclick="likeFunc(8)">Like</button>
+		<button id="dislike8" onclick="dislike(8)">Dislike</button>
 		<input id="clickMe" type="button" value="calculate" onclick="submitFunc(8);">
 		<div id="result8">0</div>
 	</div>
+
+<br><br><br>
+<div style="position: relative; display: inline-block;">
+	<input type="button" value="distance more weight" onclick="addWeight('distance')">
+	<input type="button" value="distance less weight" onclick="subtractWeight('distance')">
+	<input type="button" value="power more weight" onclick="addWeight('power')">
+	<input type="button" value="power less weight" onclick="subtractWeight('power')">
+<br><br><br>
+<div style="display: inline-block; position: relative; width: 330px;">Distance value:<p id="displayDist">1</p></div>
+<div style="display: inline-block; position: relative; width: 330px;">Power value:<p id="displayPow">1</p></div>
+
+</div>
+
+
+
+
 <div style="width: 70px; height: 500px; display: inline-block; position: absolute; right:20px; border: black solid 2px; top: 40px">
 	
 	<div style="top: -40px; position: absolute;">Location on feed</div>
